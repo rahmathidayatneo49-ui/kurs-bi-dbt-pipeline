@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: kurs_bi
+    database: kurs_bi
+    schema: public
+    tables:
+      - name: kurs_harian

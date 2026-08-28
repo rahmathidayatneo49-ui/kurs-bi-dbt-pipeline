@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: raw_kurs
+    columns:
+      - name: tanggal
+        tests:
+          - not_null
+          - unique
+
+  - name: transform_kurs
+    columns:
+      - name: tanggal
+        tests:
+          - not_null
+      - name: kurs_usd
+        tests:
+          - not_null
+
+  - name: mart_kurs
+    columns:
+      - name: bulan
+        tests:
+          - not_null
+      - name: tahun
+        tests:
+          - not_null
