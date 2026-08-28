@@ -1,15 +1,33 @@
-Welcome to your new dbt project!
+# 🏦 Pipeline Data Kurs Bank Indonesia
 
-### Using the starter project
+Pipeline data end-to-end menggunakan **dbt Core** dan **PostgreSQL** 
+untuk mengolah data kurs mata uang dari Bank Indonesia.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## 🏗️ Arsitektur
+kurs_harian (PostgreSQL)
+↓
+raw_kurs → transform_kurs → mart_kurs
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## 📦 Tech Stack
+- **dbt Core** 1.12.3 — transformasi data
+- **PostgreSQL** 16 — database
+- **Python** 3.12 — environment
+
+## 🗂️ Struktur Model
+| Model | Tipe | Deskripsi |
+|---|---|---|
+| raw_kurs | view | Ambil kolom dari tabel mentah |
+| transform_kurs | view | Kalkulasi rata-rata, ekstrak bulan/tahun |
+| mart_kurs | view | Agregasi kurs per bulan |
+
+## ✅ Data Quality Tests
+- 6 tests (not_null & unique)
+- Semua PASS
+
+## 🚀 Cara Menjalankan
+```bash
+dbt run    # jalankan semua model
+dbt test   # jalankan semua test
+dbt docs generate && dbt docs serve  # buka dokumentasi
+```
