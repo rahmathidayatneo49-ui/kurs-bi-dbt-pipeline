@@ -1,5 +1,5 @@
 # Deskripsi 
-Project ini adalah project pertama saya dalam perjalanan saya beralih dari data enginer traditional menjadi modern data engineer, ini merupakan project pertama saya
+Project ini adalah project pertama saya dalam perjalanan saya beralih dari data enginer traditional menjadi modern data engineer
 
 # Tools yang digunakan
 tools utama :
