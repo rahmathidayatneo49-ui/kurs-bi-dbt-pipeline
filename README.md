@@ -7,7 +7,7 @@ tools utama :
 2.PostgreSQL 16 - database
 tools pendukung :
 1.visual studio code - editor
-2.git - versoncning
+2.git - versioning
 
 # Tujuan
 project pertama ini bertujuan untuk mentranformasi raw data dummy kurs menjadi data mart sesuai dengan rule yang di berikan
