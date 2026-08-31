@@ -14,4 +14,4 @@ project pertama ini bertujuan untuk mentranformasi raw data dummy kurs menjadi d
 
 # Kontribusi
 AI Contribution : 70%
-Selft Contribution : 30 %
+Self Contribution : 30 %
